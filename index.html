@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            animation-name: micuqui;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-weight: 900;
+            font-family: ;
+            font-size: 4em;
+            text-decoration: none;
+            border-bottom: .1em solid blue;
+            color:blue;
+            transition-timing-function: ease;
+            transition-delay: 1s;
+            transition: font-weight 5s, color 5s, border 2s;
+        }
+        @keyframes micuqui{
+            0%{top: 0;
+                left: 0;
+             }
+            25%{
+                top: 0;
+                left: 80%;
+             }
+            50%{
+                top: 80%;
+                left: 80%;
+             }
+            75%{
+                top: 80%;
+                left: 0;
+            }
+            100%{
+                top: 0%;
+                left: 0%;
+            }
+        }
+        #trans_scale{
+            transform: rotate(45deg);
+        }
+        a:hover #trans_scale{
+            transform: rotate(270deg);
+            transition: transform 2s;
+        }
+        a:hover{
+            border-bottom: .1em solid greenyellow;
+            color: greenyellow;
+            font-weight: 100;
+        }
+        span:first-child{
+            padding: 0;
+            transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            transition: padding 5s;
+        }
+        a:hover span:first-child{
+            padding-right: 10em;
+        }
+    </style>
+</head>
+<body>
+    <a id="trans_scale" href="#"><span>made by </span><span>soho</span></a>
+    <a href="#"><span>made by </span><span>soho</span></a>
+</body>
+</html>
